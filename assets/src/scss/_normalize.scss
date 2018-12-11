@@ -1,0 +1,40 @@
+* {
+  font-family: "Microsoft YaHei", sans-serif;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  display: inherit;
+  width: inherit;
+  justify-content: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin: 0;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+input, textarea {
+  border-style: solid;
+}

@@ -1,0 +1,18 @@
+.right-nav-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #002858;
+  box-shadow: 0 0 11px 13px #002858cf;
+  color: #fff;
+  padding: 20px 50px;
+  z-index: 3;
+}
+
+.nav-content {
+  .nav-item a {
+    color: #ffffff;
+  }
+}
+
