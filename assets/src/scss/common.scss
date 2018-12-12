@@ -8,4 +8,36 @@
 
 .btn {
   background-color: #faa552;
+  border-radius: 50px;
+  position: relative;
+  color: #ffffff;
+  box-shadow: 5px -4px 0 2px #00152d61;
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: url("./assets/public/imgs/btn-part.png");
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    background-position: right;
+    z-index: 0;
+  }
+
+  p {
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.details-btn {
+  &:after {
+    display: none;
+  }
+
+  border: 3px solid #ecac59;
+  background: none;
+  box-shadow: none;
 }
