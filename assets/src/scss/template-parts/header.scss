@@ -1,12 +1,62 @@
 .main-header {
-  padding: 80px 15px;
+  padding: 100px 15px 80px 15px;
+  background-image: url("./assets/public/imgs/bg_header.jpg");
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/public/imgs/header_back.png");
+    z-index: 0;
+  }
 
   .contacts-top {
+    position: absolute;
     width: 100%;
     background-color: #002858;
     top: 0;
     left: 0;
     right: 0;
     color: #fff;
+    padding: 15px 255px 15px 70px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contacts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .phone {
+        display: inline-block;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .slider {
+    z-index: 1;
+    position: relative;
+
+    &-caption {
+      margin: 177px auto;
+      margin-left: 0;
+      width: 100%;
+      padding-right: 255px;
+
+    }
+
+    .main-title {
+      font-size: 48px;
+    }
   }
 }
